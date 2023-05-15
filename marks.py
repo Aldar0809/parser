@@ -3,8 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 
-usr = input()
-pwd = input() + '\n'
+usr = input('Введите логин: ')
+pwd = input("Введите пароль: ") + '\n'
 
 driver = webdriver.Chrome('drivers/chromedriver.exe')
 driver.get('http://sgo.monrk.ru/authorize/login')
